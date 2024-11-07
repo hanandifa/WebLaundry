@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Hans Laundry</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-body-tertiary" style="background-color: #ccc">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+              <img src="img/logo.png" alt="Logo-ITSNU" width="25" class="d-inline-block align-text-top">
+              Hans Laundry
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-bold">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <button class="btn me-2 btn btn-outline-dark ms-3 fw-bold" data-bs-toggle="modal" data-bs-target="#modal-login" type="button">Log in</button>
+        </div>
+        </div>
+      </nav>
+
+      <div id="home" class="overflow-hidden py-5 py-xl-5 position-relative" style="min-height: 400px;">
+        <img src="img/bg1.jpg" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover" alt="Meeting">
+
+        <div class="position-absolute z-n1 top-0 h-100 w-100 bg-dark"
+         style="opacity: 0.85; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85);">
+        </div>
+
+        <div class="position-absolute z-0 top-0 h-100 w-100">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="col-12 col-xl-6 text-center text-xl-start">
+                    <h1 class="display-4 text-white fw-bold" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+                        Contact Us
+                    </h1>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <div class="container-fluid py-5">
+        <div class="container" style="max-width: 900px;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4" style="width: 100px; height: 100px; border-width: 15px !important;">
+                                    <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                                </div>
+                                <h5 class="font-weight-medium m-0 mt-2"><a href="https://maps.app.goo.gl/vaoA4mGwjepMnR5o9" target="_blank" style="text-decoration: none; color: inherit;">Pekalongan</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4" style="width: 100px; height: 100px; border-width: 15px !important;">
+                                    <i class="fa fa-2x fa-envelope-open text-secondary"></i>
+                                </div>
+                                <h5 class="font-weight-medium m-0 mt-2">hanandifa@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4" style="width: 100px; height: 100px; border-width: 15px !important;">
+                                    <i class="fa fa-2x fa-phone-alt text-secondary"></i>
+                                </div>
+                                <h5 class="font-weight-medium m-0 mt-2"><a href="https://wa.me/62895422758576" target="_blank" style="text-decoration: none; color: inherit;">+62 8954-2275-8576</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Nama" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" rows="6" id="message" placeholder="Pesan" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ratio ratio-16x9" style="max-width: 800px; margin: 0 auto;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0174890122676!2d109.6260557102916!3d-6.888508167377691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7026f79d7f3b19%3A0xf9ddec01502ebc9e!2sGg.%205%2C%20Pekuncen%2C%20Kec.%20Wiradesa%2C%20Kabupaten%20Pekalongan%2C%20Jawa%20Tengah%2051152!5e0!3m2!1sid!2sid!4v1730922627267!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="overflow-hidden pt-6 pt-sm-7 pt-xl-8 pb-7 pb-sm-8 pb-xl-9 mt-5">
+      <div class="container">
+      <div class="row gx-lg-4 row-cols-1 row-cols-lg-2">
+      <div class="col">
+                  <div class="ratio ratio-1x1" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
+                      <img src="img/bg3.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
+                  </div>
+      </div>
+      
+      <div class="col d-none d-lg-block">
+                  <div class="ratio ratio-1x1" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
+                      <img src="/img/bg4.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
+                  </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0dcaf0"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+    <!-- Footer -->
+    <footer class="text-white" id="footer">
+      <div class="container">
+          <div class="row">
+              <div class="text-center mb-4">
+                  <div>
+                      <a href="https://www.instagram.com/hnansdifa/" class="btn btn-light rounded-circle mx-2">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://www.youtube.com/@MADDAMEDIA" class="btn btn-light rounded-circle mx-2">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a>
+                      <a href="https://github.com/hanandifa" class="btn btn-light rounded-circle mx-2">
+                          <i class="fa-brands fa-github"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="text-center mb-4">
+                      <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+                          <li class="mx-3"><a href="#" class="text-white" style="text-decoration: none;">Home</a></li>
+                          <li class="mx-3"><a href="#about" class="text-white" style="text-decoration: none;">About</a></li>
+                          <li class="mx-3"><a href="#gallery" class="text-white" style="text-decoration: none;">Gallery</a></li>
+                          <li class="mx-3"><a href="#project" class="text-white" style="text-decoration: none;">Project</a></li>
+                          <li class="mx-3"><a href="#skills" class="text-white" style="text-decoration: none;">Skills</a></li>
+                          <li class="mx-3"><a href="#faq" class="text-white" style="text-decoration: none;">Faq</a></li>
+                          <li class="mx-3"><a href="#contact" class="text-white" style="text-decoration: none;">Contact</a></li>
+                      </ul>
+              </div>
+          </div>
+          <div class="text-center">
+            <p>Copyright &copy; 2024; by <span class="fw-bold">Hanandifa Oksaviano</span></p>
+          </div>
+          </div>
+    </footer>
+
+      <!-- MODAL LOGIN -->
+<div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Password</label>
+              <input type="password" class="form-control">
+            </div>
+          </form>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Button</button>
+          </div>
+          <small>Don't have account? <a href="signup.html">Sign Up</a></small>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#home" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/672bfff44304e3196ade30c5/1ic1tvl7f';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  <script src="main.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
